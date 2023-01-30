@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Login</title>
+        <style>
+            .input_text[type=text],input[type=password]
+            {
+                width: 80%;
+                padding: 10px 18px;
+                margin: 8px 0px;
+                display: inline-block;
+                border: 1px solid black;
+            }
+            
+            .button_log
+            {
+                background-color: midnightblue;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 60%;
+                
+            }
+            .model_content
+            {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto;
+                border: 2px solid #888;
+                width: 50%;
+                text-align: center;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form class="model_content">
+            <h2>Login</h2>
+            <h:inputText a:placeholder="Email" class="input_text" value="#{value_login.email}"/>
+            <h:inputSecret a:placeholder="Password" class="input_text" value="#{value_login.password}"/>
+            <h:commandButton value="Masuk" class="button_log" action="#{value_login.login()}"/>
+        </h:form>
+    </h:body>
+</html>
+
