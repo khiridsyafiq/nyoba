@@ -42,7 +42,7 @@ public class login implements Serializable{
     public String login() {
         String email = this.email;
         String password = this.password;
-        if(email.equals("makkawirelang@gmail.com")&& password.equals("a"))
+        if(email.equals("syafiq@gmail.com")&& password.equals("a"))
         {
             return "login_success";
         }
